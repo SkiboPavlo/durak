@@ -6,7 +6,6 @@ class Player
   def initialize(cards, trump)
     @cards = cards
     @trump = trump
-    byebug
   end
 
   def move

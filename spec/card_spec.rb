@@ -1,4 +1,5 @@
 require 'spec_helper'
+require './app/card'
 
 RSpec.describe Card do
   example 'it should test Card class' do
