@@ -2,9 +2,6 @@ require 'spec_helper'
 require './app/card'
 
 RSpec.describe Card do
-  example 'it should test Card class' do
-    expect(described_class).to equal(Card)
-  end
 
   example 'it should successfully initialize object' do
     expect(Card.new(6, :spades).number).to eq 6
