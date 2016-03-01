@@ -67,4 +67,5 @@ RSpec.describe Player do
     expect(def_card.suit).to eq subject.deck.trump.suit
   end
 
+
 end
