@@ -11,6 +11,11 @@ RSpec.describe Card do
     expect(Card.new(6, :spades).suit).to eq :spades
   end
 
+  example 'it should set only valid attributes' do
+    expect(Card.new(3, :spades).number).to be_nil
+    expect(Card.new(6, :spiders).suit).to be_nil
+  end
+
   example 'it should validate initializator attributes' do
     expect(Card.new('6', :spades).number).to be_nil
     expect(Card.new(6, "spades").suit).to be_nil
